@@ -1,0 +1,135 @@
+body {
+	display: grid;
+	place-items: center;
+	height: 100vh;
+	background: linear-gradient(45deg, #1a5276, #922b21);
+	font-family: Arial, Helvetica, sans-serif;
+	color: #fff;
+}
+
+
+.login {
+	position: relative;
+	width: 360px;
+	height: 540px;
+	padding: 20px;
+	border-radius: 10px;
+	background: #303440;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.login:before,
+.login__circuit-mask {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: block;
+	width: 682px;
+	height: 514px;
+}
+
+.login:before {
+	background: url(img/bg-circuito.svg);
+}
+
+.login__circuit-mask {
+	display: grid;
+	place-items: center;
+	-webkit-mask: url(img/bg-circuito.svg);
+	mask: url(img/bg-circuito.svg);
+}
+
+.login__circuit-mask:before {
+	content: '';
+	position: absolute;
+	width: 200px;
+	height: 00px;
+	border-radius: 50%;
+	border: 3px solid #00f0ff;
+	animation: onda 8s infinite;
+	animation-delay: 2s;
+}
+
+.login__heading {
+	text-align: center;
+}
+
+@keyframes onda {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(8);
+	}
+	100% {
+		transform: scale(8);
+	}
+}
+
+.login form{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+form .username{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+
+.username input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16 px;
+    border: none;
+    background: none;
+    outline: none;
+	color: #fffffe;
+}
+
+.username label{
+    position: absolute;
+    top: 50%;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16 px;
+    pointer-events: none;
+}
+
+.username input:focus ~ label,
+.username input:valid ~ label  {
+   top: -5px;
+   color: white;
+}
+
+
+
+#submit{
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    background-color: #6c3483;
+    border-radius: 25px;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+
+}
+
+.sesion{
+    margin: 30px 0;
+    text-align: center;
+    font-size: 16px;
+    
+}
+
+a{
+    color: blue;
+    text-decoration: none;
+   
+}
