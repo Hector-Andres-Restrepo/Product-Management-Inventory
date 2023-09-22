@@ -1,4 +1,4 @@
 # Product-Management-Inventory
 
-<p>modificacion por los colaboradores</p>
+<p>Diseño del nuevo longuin despues de la charla sore el del prototipó</p>
 
