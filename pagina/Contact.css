@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2? family= Carter+One & family= Poppins:wght@100 & display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;/*desplazamiento lento del menu de navegacion */
+}
+
+/* Personalizar la barra de desplazamiento */
+::-webkit-scrollbar {
+    width: 10px; /* Ancho de la barra de desplazamiento */
+    background-color: #f0f0f0; /* Color de fondo de la barra de desplazamiento */
+}
+
+/* Personalizar el pulgar de la barra de desplazamiento */
+::-webkit-scrollbar-thumb {
+    background-color: #333; /* Color del pulgar de la barra de desplazamiento */
+    border-radius: 6px; /* Borde redondeado del pulgar */
+}
+
+/* Personalizar el pulgar de la barra de desplazamiento cuando se pasa el ratón por encima */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Cambiar el color del pulgar al pasar el ratón por encima */
+}
+
+body{
+    background: #dee1e2;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+header{
+    position: sticky;
+    width: 100%;
+    top: 0;
+    background-color: #fff;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.05);
+    z-index: 100; /* Asegura que el menú esté por encima de otros elementos */
+    
+}
+
+.logo{
+    color: #333;
+    text-decoration: none;
+    font-size: 2.0em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-family: 'Carter One', cursive;
+    text-align: center; 
+    
+}
+
+.logo p{
+	
+	font-size: 8px;
+	color: #333;
+	font-family: 'Poppins', sans-serif;
+
+}
+
+.grupo{
+    display: flex;
+    align-items: center;
+
+}
+
+header ul{
+    position: relative;
+    display: flex;
+    gap: 40px;
+    
+}
+
+header ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+
+header ul li a{
+    position: relative;
+    text-decoration: none;
+    font-size: 1em;
+    color: #333;
+    text-decoration: uppercase;
+    letter-spacing: 0.2em;
+    
+}
+
+header ul li a:before{
+    content: " ";
+    position: absolute;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    transform: scaleX(0);
+    transition: transform 0.5s ease-in-out;
+    transform-origin: right;
+ 
+}
+
+header ul li a:hover::before{
+    transform:scaleX(1);
+    transform-origin: left;
+}
+
+.titulointo{
+    font-family: 'Carter One', cursive;
+    text-align: center;
+    color: #0f172a; 
+    text-decoration: underline;
+}
+
+.container {
+    width: 100%;
+    max-width: 1198px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 30px;
+    margin-top: 30px;
+}
+
+.texto{
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 20px;   
+}
+
+.texto p{
+    font-size: 16px;
+    font-family: 'Mooli', sans-serif;
+    text-align: justify;
+    line-height: 1.5;
+    
+}
+
+.container a{
+    font-size: 17px;
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    margin-bottom: 15px;
+    color: black;
+    font-weight: 700;
+}
+
+.container a i{
+    color: #2691d9;
+    margin-right: 2px;
+    
+}
+
+.container form .campo, textarea{
+    font-family: 'Mooli', sans-serif;
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 16px;
+    border: 1px solid #dbdbdb;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    outline: 0px;
+    border-radius: 20px;
+}
+.container form textarea{
+    max-width: 589px;
+    min-width: 530px;
+    min-height: 140px;
+    max-height: 150px;
+    border-radius: 20px;
+}
+.container .btn-enviar{
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: 0px;
+    background: #2691d9;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 300ms ease;
+    border-radius: 20px;
+}
+
+.social-container {
+    margin: 20px 0;
+}
+
+.social-container a {
+    border: 1px solid #2691d9;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    height: 40px;
+    width: 40px;
+    transition: 0.3s ease-in-out;
+}
+
+.social-container a:hover {
+    border: 1px solid blue;
+}
+
+.contenedor-con-fondo {
+    background-image: url('img/contact.svg'); /* Reemplaza 'ruta-de-la-imagen.jpg' con la ruta real de tu imagen de fondo */
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el elemento */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen */
+    background-position: 700px center; /* Centra la imagen en el elemento */
+    /* Otros estilos para el contenedor, como ancho, alto y margen */
+    width: 100%;
+    height: 511px; /* Ajusta la altura según tus necesidades */
+    margin: 0;
+    padding: 0;
+    background-size: 511px 532px;
+    
+}
