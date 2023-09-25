@@ -7,8 +7,8 @@
 }
 
 body {
-  background: url(img/paisaje.jpg)
-    top center / cover no-repeat;
+  background: url(img/paisaje2.jpg)
+  top center / cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -212,7 +212,7 @@ input {
 }
 
 .overlay {
-  background-image: url("img/paisaje.jpg");
+  background-image: url("img/paisaje2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 0;
