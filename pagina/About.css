@@ -30,6 +30,7 @@ html{
     background-color: #555; /* Cambiar el color del pulgar al pasar el ratón por encima */
 }
 
+
 body{
     background: #dee1e2;
     min-height: 100vh;
@@ -68,12 +69,6 @@ header{
 	font-size: 8px;
 	color: #333;
 	font-family: 'Poppins', sans-serif;
-
-}
-
-.grupo{
-    display: flex;
-    align-items: center;
 
 }
 
@@ -118,45 +113,37 @@ header ul li a:hover::before{
 }
 
 .texto{
-    float: left;
-    width: 40%;
-    height: 300px;
-    margin-top: 100px;
-    margin-left: 40px;
-    padding: 0;
 
-     
+    float: left;
+    margin-top: 100px;
+    margin-left: 85px;
+    margin-right: 35px;
+    padding: 0;
+    
 }
 
 .texto p{
     font-size: 16px;
     font-family: 'Mooli', sans-serif;
-    text-align: justify;
+    text-align: left;
+    line-height: 1.5;
     
 }
 
-/*Terminan los estilos generales de las paginas*/
-
-.svg{
-    margin: 0%;
-    width: 50%;
-    height: 50%;
-    float: right;
-    margin-top: 105px;
-    margin-right: 20px;
+.container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 2fr 0px;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-items: stretch;
+    align-items: stretch;
 }
-
-.svg > img{
-    width: 674px;
-    height: 383px;
-}
-
 
 .titulointo{
     font-family: 'Carter One', cursive;
-    text-align: left;
-    color: #0f172a;
-    
+    text-align: center;
+    color: #0f172a; 
 }
 
 .destacado{
@@ -164,113 +151,136 @@ header ul li a:hover::before{
     font-family: 'Carter One', cursive;
 }
 
-
-.controlar{
-    background-color: #7fdbda;
-    float: right;
-    width: 100%;
-    height: 651px;
-    margin-top: 50px;
-    margin-left: 50px;
-    
-}
-
-
-.titulo-controlar{
-    font-family: 'Carter One', cursive;
-    text-align: center;
-    color: #0f172a;
-    
-}
-
-.controlar-h2{
-    font-family: 'Carter One', cursive;
-    text-align: center;
-    color: #0f172a;
-    font-size: 40px;
-}
-
-
-
-.contro{
-    float: right;
-    width: 40%;
-    height: 226px;
-    margin-top: 157px;
-    margin-right: 90px;
-    padding: 0
-
-}
-
-.svgcontrol{
+.svg{
     margin: 0%;
-    width: 40%;
+    width: 50%;
     height: 50%;
-    margin-top: 50px;
-    margin-left: 26px;
+    float: right;
+    margin-top: -99px;
+    margin-right: 70px;
+ 
+}
+
+.svg > img{
+    width:  400px;
+    height: auto;
+    margin-top: 107px;
+    margin-left: 95px;
+}
+
+
+.container-suporte{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 2fr -50px;
+    grid-column-gap: 30px;
+    grid-row-gap: 20px;
+    justify-items: stretch;
+    align-items: stretch;
+    background-color: #7fdbda;
+    margin-top: 20px;
+ 
+}
+
+.contenedor-1 {
+    width: auto;
+    height: auto;
+    grid-template-columns: 40%;
+    background-color: #deecf5; /* Color de fondo diferente */
+    padding: 20px; /* Agregar relleno para separar el contenido */
+    border-radius: 20px;
+    background-image: url('img/hardware.svg');
+    background-repeat: no-repeat; /* Evita la repetición de la imagen */
+    
+    
+}
+
+.texto-ser{
+
+    float: left;
+    margin-top: 73px;
+    margin-left: 85px;
+    margin-right: 35px;
+    margin: 42px;
+    
+}
+
+
+.texto-ser p{
+    font-size: 16px;
+    font-family: 'Mooli', sans-serif;
+    text-align: center;
+    line-height: 1.5;
+    padding: 5px;
+    color: black;
+}
+
+.texto-ser h2{
+    font-size: 18px;
+    font-family: 'Carter One', cursive;
+    color: #0f172a;
+    text-align: center;
+    
+}
+
+.contenedor-2 {
+    width: auto;
+    height: auto;
+    grid-template-columns: 40%;
+    background-color: #8ab5cf; /* Color de fondo diferente */
+    padding: 20px; /* Agregar relleno para separar el contenido */
+    border-radius: 20px;
+    background-image: url('img/software.svg');
+    background-repeat: no-repeat; /* Evita la repetición de la imagen */
+    
+}
+
+
+.cont-preguntas {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-items: stretch;
+    align-items: stretch;
+    background-color: #8ab5cf;
+    grid-template-columns: 50% 50%;
    
 }
 
-.svgcontrol > img{
-
-    width: 665px;
+.contenedor-3 {
+    width: 554px;
     height: auto;
+    grid-template-columns: 40%;
+    background-color: #deecf5; /* Color de fondo diferente */
+    padding: 20px; /* Agregar relleno para separar el contenido */
     border-radius: 20px;
-    border-style: solid;
-    border-color: aqua;
-
+    background-repeat: no-repeat; /* Evita la repetición de la imagen */
+    align-items: stretch;
+    margin: 20px 109px;
+    margin-top: 38px;
 }
 
 
 .custom-list {
     list-style-type: none; /* Oculta el marcador de lista estándar */
     padding-left: 20px; /* Añade un poco de espacio a la izquierda de los elementos de la lista */
-}
-
-
-.custom-list li:before {
-    content: "✔"; /* Agrega un chulito como marcador */
-    color: green; /* Cambia el color del chulito según tus preferencias */
-    margin-right: 10px; /* Espacio entre el chulito y el texto del elemento de lista */
-}
-
-
-
-.vender{
-    background-color: #72a6c4;
-    float: left;
-    width: 100%;
-    height: 550px;
-    margin-top: 50px;
-    margin-right: 50px;
+    text-align: justify;
     
 }
 
-
-.venta{
-    float: left;
-    width: 40%;
-    height: 300px;
-    margin-top: 157px;
-    margin-left: 90px;
-    padding: 0
+.custom-list li{
+    font-family: 'Mooli', sans-serif;
+    text-align: center;
 
 }
 
-.svgvender{
-    margin: 0%;
-    width: 0%;
-    height: 50%;
-    margin-top: 50px;
-    margin-left: 26px;
-   
+.custom-list li:before {
+    content: "→"; /* Agrega un chulito como marcador */
+    color: green; /* Cambia el color del chulito según tus preferencias */
+    margin-right: 10px; /* Espacio entre el chulito y el texto del elemento de lista */
+    font-size: 24px;
 }
 
-.svgvender > img{
 
-    width: 665px;
-    height: auto;
-    border-radius: 20px;
-    border-style: solid;
-    border-color: aqua;
-}
