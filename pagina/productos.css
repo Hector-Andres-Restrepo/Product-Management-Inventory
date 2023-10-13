@@ -172,6 +172,7 @@ nav {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    min-width: 671px;
 }
 
 .productos h2 {
@@ -189,8 +190,7 @@ nav {
     border: 1px solid #1c72e3;
     border-radius: 0 0 10px 10px;
     text-align: center;
-
-   
+  
 }
 .producto img {
     max-width: 100%;

@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2? family= Carter+One & family= Poppins:wght@100 & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-   
 
 }
 
@@ -117,15 +118,18 @@ header ul li a:hover::before{
     transform-origin: left;
 }
 
+.contenedor{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+}
+
 .texto{
-    float: left;
-    width: 40%;
-    height: 300px;
+    display: grid;
+    width: 93%;
+    height:50%;
     margin-top: 100px;
     margin-left: 40px;
-    padding: 0;
-
-     
+    padding: 0;   
 }
 
 .texto p{
@@ -138,12 +142,9 @@ header ul li a:hover::before{
 /*Terminan los estilos generales de las paginas*/
 
 .svg{
-    margin: 0%;
-    width: 50%;
-    height: 50%;
-    float: right;
     margin-top: 105px;
     margin-right: 20px;
+    display: grid;
 }
 
 .svg > img{
@@ -151,12 +152,37 @@ header ul li a:hover::before{
     height: 383px;
 }
 
-
 .titulointo{
     font-family: 'Carter One', cursive;
     text-align: left;
-    color: #0f172a;
+    color: #0f172a;  
+}
+
+
+
+/* About */
+
+.containerabout{
+    text-align: center;
+    display: grid;
+    margin-top: 55px;
+    background-color:white;
     
+   
+}
+
+.containerabout p{
+    font-family: 'Mooli', sans-serif;
+    margin-top: 10px;
+    
+}
+
+.tituloser{
+    font-family: 'Carter One', cursive;
+    text-align: center;
+    color: #0f172a;  
+    margin-top: 30px;
+    font-size: 40px;
 }
 
 .destacado{
@@ -165,112 +191,145 @@ header ul li a:hover::before{
 }
 
 
-.controlar{
-    background-color: #7fdbda;
-    float: right;
-    width: 100%;
-    height: 651px;
-    margin-top: 50px;
-    margin-left: 50px;
-    
-}
-
-
-.titulo-controlar{
-    font-family: 'Carter One', cursive;
-    text-align: center;
-    color: #0f172a;
-    
-}
-
 .controlar-h2{
     font-family: 'Carter One', cursive;
     text-align: center;
     color: #0f172a;
-    font-size: 40px;
+    font-size: 35px;
 }
 
 
+.about__paragraph {
+    line-height: 1.7;
+}
 
-.contro{
-    float: right;
-    width: 40%;
-    height: 226px;
-    margin-top: 157px;
-    margin-right: 90px;
-    padding: 0
+.lisservis{
+    text-decoration: none;
+    
+}
+.chulo{
+    color: black; 
+    margin-right: 10px;
 
 }
 
-.svgcontrol{
-    margin: 0%;
-    width: 40%;
-    height: 50%;
-    margin-top: 50px;
-    margin-left: 26px;
-   
+.lisservis li{
+    margin-bottom: 20px;
+    font-family: 'Carter One', cursive;
 }
 
-.svgcontrol > img{
-
-    width: 665px;
-    height: auto;
-    border-radius: 20px;
-    border-style: solid;
-    border-color: aqua;
-
+.about__main {
+    padding-top: 80px;
+    display: grid;
+    width: 90%;
+    margin: 0 auto;
+    gap: 1em;
+    overflow: hidden;
+    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+    margin-bottom: 54px;
 }
 
 
-.custom-list {
-    list-style-type: none; /* Oculta el marcador de lista estándar */
-    padding-left: 20px; /* Añade un poco de espacio a la izquierda de los elementos de la lista */
-}
-
-
-.custom-list li:before {
-    content: "✔"; /* Agrega un chulito como marcador */
-    color: green; /* Cambia el color del chulito según tus preferencias */
-    margin-right: 10px; /* Espacio entre el chulito y el texto del elemento de lista */
-}
-
-
-
-.vender{
-    background-color: #72a6c4;
-    float: left;
-    width: 100%;
-    height: 550px;
-    margin-top: 50px;
-    margin-right: 50px;
+.about__icons {
+    display: grid;
+    gap: 1em;
+    justify-items: center;
+    width: 260px;
+    overflow: hidden;
+    margin: 0 auto;
+ 
     
 }
 
-
-.venta{
-    float: left;
-    width: 40%;
-    height: 300px;
-    margin-top: 157px;
-    margin-left: 90px;
-    padding: 0
-
-}
-
-.svgvender{
-    margin: 0%;
-    width: 0%;
-    height: 50%;
-    margin-top: 50px;
-    margin-left: 26px;
+.about__icon {
+    width: 55px;
    
 }
 
-.svgvender > img{
 
-    width: 665px;
-    height: auto;
-    border-radius: 20px;
-    border-style: solid;
-    border-color: aqua;
+/*Aquí debajo va el FOOTER*/
+
+footer{
+    width: 100%;
+    padding: 50px 0px;
+    background-image: url(img/background-footer.svg);
+    background-size: cover;
+   
+    
+}
+
+.container__footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 26px;
+}
+
+.box__footer{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.logofooter{
+    
+    text-decoration: none;
+    font-size: 2.0em;
+    letter-spacing: 0.1em;
+    font-family: 'Carter One', cursive;
+    text-align: center; 
+}
+
+.logofooter p{
+    font-size: 8px;
+	font-family: 'Poppins', sans-serif;
+}
+
+.box__footer .terms{
+    max-width: 350px;
+    margin-top: 20px;
+    font-weight: 500;
+    color: #7a7a7a;
+    font-size: 18px;
+}
+
+.box__footer h2{
+    margin-bottom: 30px;
+    color: #343434;
+    font-weight: 700;
+}
+
+.box__footer a{
+    margin-top: 10px;
+    color: #7a7a7a;
+    font-weight: 600;
+    
+}
+
+.box__footer a:hover{
+    opacity: 0.8;
+}
+
+.box__footer a .fab{
+    font-size: 20px;
+}
+
+.box__copyright{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+}
+
+.box__copyright p{
+    margin-top: 20px;
+    color: #7a7a7a;
+}
+
+.box__copyright hr{
+    border: none;
+    height: 1px;
+    background-color: #7a7a7a;
 }
