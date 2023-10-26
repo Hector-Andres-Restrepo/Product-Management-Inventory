@@ -16,7 +16,7 @@ if ($resultado->num_rows > 0) {
 } else {
     $insertar = "INSERT INTO registros VALUES ('$nombre1', '$email1', '$password1')";
     if ($conexion->query($insertar) === TRUE) {
-        header("location:login-pro.html");
+        header("location:index.html");
     } else {
         echo "Error al insertar el registro: " . $conexion->error;
     }

@@ -15,7 +15,7 @@ $resultado = $conexion->query($consulta);
 if($resultado->num_rows > 0){
     header("location:pagina1.html");
 }else{
-    include("login-pro.html");
+    include("index.html");
     ?>
     <h1>ERROR EN LA AUTENTIFICACION</h1>
     <?php
