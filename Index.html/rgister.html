@@ -11,13 +11,13 @@
     <body>
         <div class="container" id="container">
             <div class="form-container login-container" >
-                <form >
+                <form  action="guardar.php" method="post">
         
                   <h1>Registrar aquí</h1>
         
                   <div class="form-control2">
         
-                    <input type="text" id="username" placeholder="Name" required/>
+                    <input type="text" id="username" placeholder="Name" name="nombre1" required/>
                     <small id="username-error"></small>
                     <span></span>
         
@@ -25,7 +25,7 @@
         
                   <div class="form-control2">
         
-                    <input type="email" id="email" placeholder="Email" required/>
+                    <input type="email" id="email" placeholder="Email" name="email1" required/>
                     <small id="email-error"></small>
                     <span></span>
         
@@ -33,7 +33,7 @@
         
                   <div class="form-control2">
         
-                    <input type="password" id="password" placeholder="Password" required/>
+                    <input type="password" id="password" placeholder="Password" name="password1" required/>
                     <small id="password-error"></small>
                     <span></span>
         
@@ -66,6 +66,19 @@
 
 
         </div>
+
+        <script>
+          var limitedInputs = document.querySelectorAll(".limited-input");
+          
+          limitedInputs.forEach(function(input) {
+              input.addEventListener("input", function() {
+                  if (this.value.length > 50) {
+                      this.value = this.value.substring(0, 50); // Limita el valor a 50 caracteres
+                  }
+              });
+          });
+        </script>
+
     </body>
 
 

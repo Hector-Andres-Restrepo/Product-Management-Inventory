@@ -14,13 +14,13 @@
 
       <div class="form-container login-container">
 
-        <form >
+        <form action="validar.php" method="post">
 
           <h1>Ingresar aquí.</h1>
 
           <div class="form-control2">
 
-            <input type="email" class="email-2" placeholder="Email" required />
+            <input type="email" class="email-2" placeholder="Email" name="email" maxlength="50" required/>
             <small class="email-error-2"></small>
             <span></span>
 
@@ -28,7 +28,7 @@
 
           <div class="form-control2">
 
-            <input type="password" class="password-2" placeholder="Password" required />
+            <input type="password" class="password-2" placeholder="Password" name="password" maxlength="50" required/>
             <small class="password-error-2"></small>
             <span></span>
 
@@ -65,8 +65,18 @@
 
     </div>
 
+    <script>
+      var limitedInputs = document.querySelectorAll(".limited-input");
+      
+      limitedInputs.forEach(function(input) {
+          input.addEventListener("input", function() {
+              if (this.value.length > 50) {
+                  this.value = this.value.substring(0, 50); // Limita el valor a 50 caracteres
+              }
+          });
+      });
+      </script>
+    
   </body>
-
  
-  
 </html>
