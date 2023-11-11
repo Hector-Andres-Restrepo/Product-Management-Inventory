@@ -17,18 +17,14 @@ if($resultado->num_rows > 0){
 }else{
     include("index.html");
     ?>
-    <div id="message-container" style="position: fixed; top: 21px; width: 40%; background-color: #2691d9; text-align: center; border-radius: 20px;">
-    <div id="message" style="padding: 10px; background-color: #65b2e6; border-radius: 20px;">
-        <h1 style="color: #fff; font-size: 27px;">Error en la Autentificacion</h1>
-    </div>
-</div>
-
-<script>
-    // JavaScript para ocultar el mensaje después de 3 segundos
-    setTimeout(function () {
-        document.getElementById("message-container").style.display = "none";
-    }, 2000); // 2000 milisegundos = 2 segundos
-</script>
+       <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+            <script>
+                Swal.fire({
+                  title: "Error!",
+                  text: "Error en la autenticación. Por favor, verifica tu Email  y Password e inténtalo nuevamente!",
+                  icon: "error"
+                });     
+            </script>
     <?php
 }
 mysqli_free_result($resultado);
